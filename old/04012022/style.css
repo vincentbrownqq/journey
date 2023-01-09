@@ -1,0 +1,38 @@
+body {
+	background: linear-gradient(to right, 
+	hsla(0, 100%, 100%, 1), 
+	hsla(60, 100%, 50%, 1),
+	hsla(20, 100%, 50%, 1),
+	hsla(360, 100%, 50%, 1));
+	
+	display: flex;	
+	width: 400px;
+	margin: auto;
+	text-align: center;
+	align-items:  center;
+	padding: 10px;
+}
+
+header {
+	border: 1px solid blue;
+	border-radius: 5px;
+	background: white;
+	box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.65);
+	margin: 10px;	
+}
+
+main {
+	border: 1px solid red;
+	border-radius: 5px;
+	background: white;
+	box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.65);
+}
+
+footer {
+	border: 1px solid white;
+	border-radius: 5px;
+	background: white;
+	box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.5);
+	margin-top: 10px;
+}
+

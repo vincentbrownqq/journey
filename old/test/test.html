@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Animated Text</title>
+    <link rel="stylesheet" href="test.css" type="text/css" media="screen">
+  </head>
+  <body>
+    <div id="text"></div>
+  </body>
+  <script>
+    // Set the speed (in milliseconds) of the animation
+    var speed = 400;
+
+    // Set the index to 0
+    var index = 0;
+
+    // Set the text to display
+    var text = "Hello.";
+
+    // Create a function to display the text one character at a time
+    function type() {
+      // If the index is less than the length of the text, add the next character
+      if (index < text.length) {
+        document.getElementById('text').innerHTML += text.charAt(index);
+        index++;
+      }
+
+      // Repeat the function after a delay
+      setTimeout(type, speed);
+    }
+
+    // Start the animation
+    type();
+
+</html>
+
